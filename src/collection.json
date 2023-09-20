@@ -1,0 +1,20 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "tailwind-container": {
+      "description": "Generate a Tailwind container component",
+      "factory": "./tailwind-container/index#tailwindContainer",
+      "schema": "./tailwind-container/schema.json"
+    },
+    "crud-service": {
+      "description": "Generate a CRUD HTTP service",
+      "factory": "./crud-service/index#crudService",
+      "schema": "../node_modules/@schematics/angular/service/schema.json"
+    },
+    "custom-directive": {
+      "description": "Generate a Custom Directive with ElementRef y Renderer2.",
+      "factory": "./custom-directive/index#customDirective",
+      "schema": "./custom-directive/schema.json"
+    }
+  }
+}
